@@ -15,6 +15,8 @@ import { GridListTileBar } from '@material-ui/core';
 //api call
 import Unsplash, { toJson } from "unsplash-js";
 
+
+
 const Addimg = () => {
 
   //State
@@ -22,10 +24,12 @@ const Addimg = () => {
     const [pics, setPics] = useState([]);
     //console.log(query);
 
+    
+
 
     //SearchPhoto
     const unsplash = new Unsplash({
-      accessKey:process.env.REACT_APP_API_KEY,
+      accessKey: process.env.REACT_APP_UNSPLASH_API_KEY,
     });
 
     const searchPhotos = async (e) => {
